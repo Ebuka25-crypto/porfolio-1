@@ -1,0 +1,148 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1f1f1f;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #efef;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* HOME */
+.home {
+  height: 100vh;
+  background: rgba(188, 207, 11, 0.788);
+  color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home h1 {
+  font-size: 40px;
+  max-width: 700px;
+}
+
+.home p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.hero-btn {
+  margin-top: 25px;
+  background: #1f1f1f;
+  color: #efe;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 40px;
+  background: #ffffff;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about img {
+  width: 150px; /* you can
+   change the size */
+  height: 150px;
+  border-radius: 50%; /* makes it 
+  round */
+  object-fit: cover; /* keeps the image properly 
+  cropped */
+}
+
+/* PROJECTS */
+.projects {
+  padding: 60px 40px;
+  background:  rgba(188, 207, 11, 0.788);
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px;
+  background: #1f1f1f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE FOR PHONES */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    display: none; /* simple mobile version */
+  }
+}
