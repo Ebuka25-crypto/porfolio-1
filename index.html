@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">MyPortfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="home">
+    <h1>Take on your biggest projects and goals</h1>
+    <p>With my high quality features and skills</p>
+    <button class="hero-btn">Get Started</button>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <div>
+        <h2>About Me</h2>
+        <p>I am a creative designer with a focus on clean and responsive design.</p>
+      </div>
+
+      <img src="my.jpg" alt="profile picture" class="profile-image">
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>A responsive landing page design.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>A simple web application UI.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="response"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
